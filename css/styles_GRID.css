@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: brown;
+    display: grid;
+    
+    grid-template-columns: 35% 35% 30%;
+    grid-template-rows: 30% 50% 20%;
+    grid-template-areas: 
+    "header header header"
+    "news1 news2 aside"
+    "footer footer aside"
+    ;
+
+    header {
+        grid-area: header;
+        background-color: rgb(147, 226, 50);
+    }
+
+    #news1 {
+        grid-area: news1;
+        background-color: rgb(35, 191, 35);
+    }
+
+    #news2 {
+        grid-area: news2;
+        background-color: rgb(35, 191, 191);
+    }
+
+    aside{
+        grid-area: aside;
+        background-color: rgb(191, 35, 35);
+    }
+
+    footer {
+        grid-area: footer;
+        background-color: rgb(191, 191, 35);
+    }
+}
